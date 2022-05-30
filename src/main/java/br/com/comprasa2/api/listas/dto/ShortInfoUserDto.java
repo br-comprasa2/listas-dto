@@ -13,6 +13,13 @@ public class ShortInfoUserDto {
 	@JsonProperty("name")	
 	private String name;
 
+	
+	public ShortInfoUserDto(String _id, String _name) {
+		this.id = _id;
+		this.name = _name;
+	}
+	public ShortInfoUserDto() {}
+	
 	public String getId() {
 		return id;
 	}
