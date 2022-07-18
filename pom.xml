@@ -18,6 +18,14 @@
 		<sonar.dependencyCheck.reportPath>${basedir}/dependency-check-report.xml</sonar.dependencyCheck.reportPath>
 	</properties>
 
+	<distributionManagement>
+	   <repository>
+	     <id>github</id>
+	     <name>GitHub OWNER Apache Maven Packages</name>
+	     <url>https://maven.pkg.github.com/br-comprasa2/listas-dto</url>
+	   </repository>
+	</distributionManagement>
+	
 	<dependencies>
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
