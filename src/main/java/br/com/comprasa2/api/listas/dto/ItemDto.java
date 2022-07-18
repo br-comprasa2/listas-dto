@@ -21,6 +21,11 @@ public class ItemDto {
 	@JsonProperty("comprado")	
 	private boolean comprado;
 
+	@SerializedName("importante")
+	@JsonProperty("importante")	
+	private boolean importante;
+
+	
 	@SerializedName("unidade")
 	@JsonProperty("unidade")	
 	private String unidade;
@@ -36,6 +41,10 @@ public class ItemDto {
 	@SerializedName("reservadoPara")
 	@JsonProperty("reservadoPara")	
 	private ShortInfoUserDto reservadoPara;
+
+	@SerializedName("updateTime")
+	@JsonProperty("updateTime")	
+	private Long updateTime;
 
 	
 	public String getId() {
@@ -100,6 +109,22 @@ public class ItemDto {
 
 	public void setComprado(boolean comprado) {
 		this.comprado = comprado;
+	}
+
+	public boolean isImportante() {
+		return importante;
+	}
+
+	public void setImportante(boolean importante) {
+		this.importante = importante;
+	}
+
+	public Long getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setUpdateTime(Long updateTime) {
+		this.updateTime = updateTime;
 	}
 
 	

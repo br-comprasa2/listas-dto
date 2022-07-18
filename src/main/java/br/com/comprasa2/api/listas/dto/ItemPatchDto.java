@@ -8,7 +8,11 @@ public class ItemPatchDto {
 	@SerializedName("comprado")
 	@JsonProperty("comprado")	
 	private boolean comprado;
-	
+
+	@SerializedName("importante")
+	@JsonProperty("importante")	
+	private boolean importante;
+
 	@SerializedName("reservadoPara")
 	@JsonProperty("reservadoPara")	
 	private ShortInfoUserDto reservadoPara;
@@ -28,6 +32,14 @@ public class ItemPatchDto {
 
 	public void setReservadoPara(ShortInfoUserDto reservadoPara) {
 		this.reservadoPara = reservadoPara;
+	}
+
+	public boolean isImportante() {
+		return importante;
+	}
+
+	public void setImportante(boolean importante) {
+		this.importante = importante;
 	}
 
 
